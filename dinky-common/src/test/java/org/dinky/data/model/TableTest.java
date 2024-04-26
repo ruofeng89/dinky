@@ -87,6 +87,11 @@ class TableTest {
         flinkConfig = "#{schemaName}=schemaName, #{tableName}=tableName, #{abc}=abc, #{}=null, bcd=bcd";
     }
 
+    /**
+     *
+     *
+     */
+
     @Test
     void getFlinkDDL() {
         String result = table.getFlinkDDL(flinkConfig, "NewTableName");
